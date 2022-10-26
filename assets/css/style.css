@@ -39,7 +39,7 @@ body {
     position: absolute;
     left: 41.5%;
     top: -1rem;
-    display: none;
+    /* display: none; */
 
 
 
@@ -52,7 +52,7 @@ body {
     align-self: center;
     background-color: var(--clr-background);
     width: 95%;
-    min-height: 20vh;
+    /* min-height: 20vh; */
     border-radius: 2.5rem;
     overflow: hidden
 }
@@ -97,15 +97,37 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
+    position: relative;
 }
 
 .container .form-user  label input {
-    padding: 1rem 2rem;
+    width:90%;
+    padding: 1rem 3.5rem;
     border-radius: 1rem;
     border: 1px solid var(--clr-secondary);
     color: var(--clr-primary);
     font-family: 'Poppins', 'FontAwesome', sans-serif;
 
+}
+
+.container .form-user .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 3rem;
+    font-size:1.5rem;
+    font-weight: 900;
+    color:var(--clr-primary);
+}
+
+.container .form-user .icon-end{
+    position: absolute;
+    right: 3rem;
+    font-size:1.5rem;
+    font-weight: 900;
+    color: #a4131060;
+    
 }
 
 .container .text-recover {
@@ -164,7 +186,7 @@ body {
     
 
     .container .form-user label input {
-        padding: .5rem 1rem;
+        padding: .5rem 3.5rem;
         border-radius: 1rem;
         border: 1px solid var(--clr-secondary);
         color: var(--clr-primary);
@@ -184,10 +206,16 @@ body {
         }
 
         .container .form-user label input {
-            padding: .3rem 1rem;
+            padding: .3rem 3.5rem;
             border-radius: .5rem;
             
         
         }
 
+    }
+
+    @media (min-width: 1000px){
+        .container {
+            width: 30%;
+        }
     }
